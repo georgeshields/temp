@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "hw3finalcluster"
+  cluster:
+    server: "https://44.222.142.64/k8s/clusters/c-m-xn22nnrh"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2VENDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      GN5TWpNNQpOVEExTmpBZUZ3MHlOREEzTXpFd016QTBNVFphRncwek5EQTNNamt3TXpBME1UWmFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE56SXlNemsxTURVMk1Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRUhMOG9LQk5uUnFhRQpucEhHNURmSlJLQlBWN3hZZzdCb1hHUjlpT\
+      FBJU1NqVHd2ZCtWSjdIN3dMNUpPbXRTb3EwM1NheG1uK01LaVhkClFqK2hTeGUwbzZOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGT\
+      UFNZWFlajIxOUFlQ0J0R2ZOdXByZ0pMb2Z4TUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSVFEcApyR\
+      FE0RjRBUWhjK1Boa3hyYnJKeFZ1SjBwYjJPNW83Zi9wOVVpRHRNOVFJZ2J4UTFmZG1KOWRKQll5V\
+      0RDOE5ICkRYR2pCQmFhTUxjSW5PNmtFbUNFYkpRPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "hw3finalcluster"
+  user:
+    token: "kubeconfig-user-vj5pg4wvkw:w9t9tprlb92vtcghdgm8m2qlnzp7hdzbrlffgxnk8ljklcrbtpr4hg"
+
+
+contexts:
+- name: "hw3finalcluster"
+  context:
+    user: "hw3finalcluster"
+    cluster: "hw3finalcluster"
+
+current-context: "hw3finalcluster"
